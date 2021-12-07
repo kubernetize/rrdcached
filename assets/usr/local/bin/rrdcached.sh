@@ -8,6 +8,7 @@ exec /usr/sbin/rrdcached \
 	-l :42217 \
 	-b /data/db \
 	-j /data/journal \
+	-p ${RRDCACHED_PID:-/tmp/rrdcached.pid} \
 	-w ${RRDCACHED_WRITE_TIMEOUT:-300} \
 	-z ${RRDCACHED_WRITE_JITTER:-0} \
 	-f ${RRDCACHED_FLUSH_DEAD_DATA_INTERVAL:-3600} \
