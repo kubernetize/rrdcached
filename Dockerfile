@@ -1,5 +1,8 @@
 FROM alpine:3.15
 
+LABEL org.opencontainers.image.authors "Richard Kojedzinszky <richard@kojedz.in>"
+LABEL org.opencontainers.image.source https://github.com/kubernetize/rrdcached
+
 RUN \
     adduser -D -H -u 1000 rrdcached && \
     apk --no-cache add rrdtool-cached
