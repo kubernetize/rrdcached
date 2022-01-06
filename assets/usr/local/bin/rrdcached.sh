@@ -10,6 +10,6 @@ exec /usr/sbin/rrdcached \
 	-j /data/journal \
 	-p ${RRDCACHED_PID:-/tmp/rrdcached.pid} \
 	-w ${RRDCACHED_WRITE_TIMEOUT:-300} \
-	-z ${RRDCACHED_WRITE_JITTER:-0} \
+	-z ${RRDCACHED_WRITE_JITTER:-300} \
 	-f ${RRDCACHED_FLUSH_DEAD_DATA_INTERVAL:-3600} \
 	-t ${RRDCACHED_THREADS:-4}
