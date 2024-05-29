@@ -1,4 +1,4 @@
-FROM alpine:3.18.3
+FROM alpine:3.20.0
 
 LABEL org.opencontainers.image.authors "Richard Kojedzinszky <richard@kojedz.in>"
 LABEL org.opencontainers.image.source https://github.com/kubernetize/rrdcached
